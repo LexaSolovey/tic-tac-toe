@@ -32,7 +32,7 @@ class TicTacToe {
         if(checkXPlayer) winner = 'x';
         if(checkOPlayer) winner = 'o';
       });
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < this.matrixOfField.length; i++) {
         if (this.matrixOfField[0][i] === this.matrixOfField[1][i] && this.matrixOfField[1][i] === this.matrixOfField[2][i]){
           winner = this.matrixOfField[0][i];
         }
