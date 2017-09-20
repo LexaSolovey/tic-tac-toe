@@ -34,14 +34,14 @@ class TicTacToe {
       });
       for (let i = 0; i < 3; i++) {
         if (this.matrixOfField[0][i] === this.matrixOfField[1][i] && this.matrixOfField[1][i] === this.matrixOfField[2][i]){
-          winner = this.matrixOfField[0][i]
+          winner = this.matrixOfField[0][i];
         }
       }
       if (this.matrixOfField[0][0] === this.matrixOfField[1][1] && this.matrixOfField[1][1] === this.matrixOfField[2][2]) {
-        winner = this.matrixOfField[0][0]
+        winner = this.matrixOfField[0][0];
       }
       if (this.matrixOfField[0][2] === this.matrixOfField[1][1] && this.matrixOfField[1][1] === this.matrixOfField[2][0]) {
-        winner = this.matrixOfField[0][2]
+        winner = this.matrixOfField[0][2];
       }
       return winner;
     }
@@ -50,7 +50,7 @@ class TicTacToe {
       let haveNextTurn = true;
       this.matrixOfField.forEach((rowItem) =>{
         rowItem.find((colItem) => {
-          if(colItem===null) haveNextTurn = false;
+          if(colItem === null) haveNextTurn = false;
         });
       });
       return haveNextTurn;
